@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Cadastro de Clientes</title>
+</head>
+
+<body class="mx-3">
+    <div class="navbar navbar-light bg-light menu">
+        <a class="navbar-brand" href="#">CRUD PHP</a>
+    </div>
+    <div>
+        <form>
+
+            <div class="form-floating mb-3" style="width: 700px;">
+                <input size="70" maxlength="60" type="text" class="form-control" id="nome" placeholder="Digite seu nome"
+                    required>
+                <label for="nome">Nome</label>
+            </div>
+
+            <div class="form-floating mb-3" style="width: 700px;">
+                <input class="form-control" name="email" type="email" id="email" size="70" maxlength="60"
+                    placeholder="nome@exemplo.com">
+                <label for="email">Endereço de e-mail</label>
+            </div>
+
+            <div class="form_floating mb-3" style="width: 700px;">
+                <label>Sexo:</label>
+                <input class="form-check-input" name="sexo" type="radio" value="Masculino" checked="checked" />
+                Masculino
+                <input class="form-check-input" name="sexo" type="radio" value="Feminino" />
+                Feminino
+            </div>
+
+            <div class="row g-3">
+                <div class="form-floating mb-3" style="width: 100px;">
+                    <input size="3" maxlength="4" type="text" class="form-control" id="DDD"
+                        placeholder="Digite seu DDD">
+                    <label for="ddd">DDD</label>
+                </div>
+                <div class="form-floating mb-3" style="width: 315px;">
+                    <input type="text" class="form-control" id="telefone" name="telefone"
+                        placeholder="Digite seu Telefone">
+                    <label for="telefone">Telefone</label>
+                </div>
+            </div>
+
+            <div class="form-floating mb-3" style="width: 700px;">
+                <input class="form-control" name="endereco" type="text" id="endereco" size="70" maxlength="70"
+                    placeholder="Digite seu endereço" />
+                <label for="endereco">Endereço</label>
+            </div>
+
+            <div class="form-floating mb-3" style="width: 700px;">
+                <input class="form-control" name="cidade" type="text" id="cidade" maxlength="20"
+                    placeholder="Digite seu e-mail" />
+                <label for="cidade">Cidade</label>
+            </div>
+
+            <div class="form-floating mb-3" style="width: 700px;">
+                <select class="form-select" name="estado" id="estado" aria-label="Floating label select example">
+                    <option selected></option>
+                    <option value="DF">DF</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                </select>
+                <label for="floatingSelect">Selecione seu estado</label>
+            </div>
+
+            <div class="form-floating mb-3" style="width: 700px;">
+                <input class="form-control" name="bairro" type="text" id="bairro" maxlength="20"
+                    placeholder="Digite seu bairro" />
+                <label for="bairro">Bairro</label>
+            </div>
+
+            <div class="form-floating mb-3" style="width: 700px;">
+                <input class="form-control" name="pais" type="text" id="pais" maxlength="20"
+                    placeholder="Digite seu país" />
+                <label for="pais">País</label>
+            </div>
+
+            <div class="form-floating mb-3" style="width: 700px;">
+                <input class="form-control" name="login" type="text" id="login" maxlength="12"
+                    placeholder="Digite seu login" />
+                <label for="login">Login</label>
+            </div>
+
+            <div class="form-floating mb-3" style="width: 700px;">
+                <input class="form-control" name="senha" type="password" id="senha" maxlength="12"
+                    placeholder="Digite sua senha" />
+                <label for="senha">Senha</label>
+            </div>
+
+            <div class="form-check mb-3">
+                <input class="form-check-input" name="news" type="checkbox" id="news" value="ATIVO" checked="checked" />
+                <label class="news" for="flexCheckDefault">
+                    Desejo receber novidades e informações sobre o conteúdo deste site.
+                </label>
+            </div>
+
+            <div>
+                <div>
+                    <button type="submit" class="btn btn-primary" name="cadastrar">Cadastrar</button>
+                    <button type="reset" class="btn btn-primary" name="limpar">Limpar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
